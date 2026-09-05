@@ -1,0 +1,18 @@
+.page-header {
+    margin-bottom: 4rem;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.page-header p {
+    margin: 2rem 0 0;
+    color: var(--muted-foreground);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.5;
+}

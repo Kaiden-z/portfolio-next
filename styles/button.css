@@ -1,0 +1,38 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+}
+
+.button-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+}
+
+.button-primary:hover {
+  background: var(--primary-foreground);
+  color: var(--primary);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 9999rem;
+  transition: 0.2s ease;
+}
+
+.button-secondary:hover {
+  background: var(--card-hover);
+  border-color: var(--border-hover);
+}

@@ -1,0 +1,35 @@
+:root {
+  /* Backgrounds */
+  --background: #0b0b0bfa;
+  --foreground: #f2f2f2;
+
+  /* Surfaces */
+  --card: #151515;
+  --card-hover: #1c1c1c;
+  --muted: #202020;
+
+  /* Text */
+  --muted-foreground: #a3a3a3;
+  --subtle-foreground: #737373;
+
+  /* Borders */
+  --border: #2a2a2a;
+  --border-hover: #404040;
+
+  /* Primary */
+  --primary: #e5e5e5;
+  --primary-foreground: #0b0b0b;
+
+  /* Secondary */
+  --secondary: #262626;
+  --secondary-foreground: #f2f2f2;
+
+  /* States */
+  --success: #7c9a7e;
+  --warning: #b09a6a;
+  --error: #a66b6b;
+  --info: #71889b;
+
+  /* Focus */
+  --ring: #737373;
+}
