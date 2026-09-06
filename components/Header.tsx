@@ -9,7 +9,7 @@ export default function Header() {
             <Navbar />
             <Button
                 icon={<DownloadIcon />}
-                href="/cv.pdf"
+                href="/KaidenZapantaResume2026.pdf"
                 variant="secondary"
             >
                 Resume / CV

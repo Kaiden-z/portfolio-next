@@ -6,7 +6,6 @@ export default function Projects() {
         <main>
             <PageHeader
                 title="PROJECTS"
-                subtitle="A showcase of my work and accomplishments."
             />
         </main>
     );

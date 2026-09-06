@@ -6,7 +6,6 @@ export default function About() {
         <main>
             <PageHeader
                 title="ABOUT ME"
-                subtitle="A little bit about who I am and what I do."
             />
 
             <section>
