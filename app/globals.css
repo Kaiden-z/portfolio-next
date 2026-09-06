@@ -5,6 +5,8 @@
 @import "../styles/hero.css";
 @import "../styles/icon.css";
 @import "../styles/page-header.css";
+@import "../styles/about.css";
+@import "../styles/projects.css";
 
 body {
   background: var(--background);

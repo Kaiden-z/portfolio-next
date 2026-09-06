@@ -1,0 +1,47 @@
+.about-section {
+    display: grid;
+    grid-template-columns: minmax(0, 600px) 500px;
+    max-width: 1150px;
+    gap: 3rem;
+    align-items: start;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 750px;
+}
+
+.about-text p {
+    margin: 0 0 1.5rem;
+    line-height: 1.7;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2rem;
+}
+
+.past-works-section {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.past-works-section .button {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

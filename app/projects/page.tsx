@@ -1,4 +1,7 @@
+import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
+import GitHubIcon from "@/icons/GitHubIcon";
+import ItchIcon from "@/icons/ItchIcon";
 
 
 export default function Projects() {
@@ -7,6 +10,25 @@ export default function Projects() {
             <PageHeader
                 title="PROJECTS"
             />
+
+            <section className="project-links">
+                <Button
+                    icon={<GitHubIcon />}
+                    variant="secondary"
+                    href="/projects"
+                >
+                    GitHub
+                </Button>
+                <Button
+                    icon={<ItchIcon />}
+                    variant="secondary"
+                    href="/projects"
+                >
+                    Itch.io
+                </Button>
+            </section>
+
+            
         </main>
     );
 }
