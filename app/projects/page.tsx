@@ -15,14 +15,14 @@ export default function Projects() {
                 <Button
                     icon={<GitHubIcon />}
                     variant="secondary"
-                    href="/projects"
+                    href="https://github.com/Kaiden-z"
                 >
                     GitHub
                 </Button>
                 <Button
                     icon={<ItchIcon />}
                     variant="secondary"
-                    href="/projects"
+                    href="https://kaiden-z.itch.io/"
                 >
                     Itch.io
                 </Button>
