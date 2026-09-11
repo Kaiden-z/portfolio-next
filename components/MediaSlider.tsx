@@ -39,6 +39,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                     {currentMedia.type === "video" ? (
                         <video
                             src={currentMedia.src}
+                            poster={currentMedia.poster}
                             controls
                             loop
                             className="media-content"

@@ -11,7 +11,7 @@ export default function ProjectCard({
     steamUrl,
 }: Project) {
     return (
-        <article className="project-card">
+        <article className="project-card border">
             <div className="project-card-media">
                 <MediaSlider media={media} />
             </div>
