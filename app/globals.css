@@ -7,6 +7,8 @@
 @import "../styles/page-header.css";
 @import "../styles/about.css";
 @import "../styles/projects.css";
+@import "../styles/media-slider.css";
+@import "../styles/project-card.css";
 
 body {
   background: var(--background);
