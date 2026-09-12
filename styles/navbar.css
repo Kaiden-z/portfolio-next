@@ -1,3 +1,36 @@
+.site-logo {
+    color: var(--foreground);
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.075em;
+
+    position: relative;
+    transition: opacity 0.2s ease;
+}
+
+.site-logo::after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin-top: 0.15rem;
+
+    background: var(--foreground);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease;
+}
+
+.site-logo:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 .navbar {
   display: flex;
   gap: 2rem;
@@ -25,7 +58,7 @@
   left: 0;
   bottom: -6px;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--foreground);
 
   transform: scaleX(0);

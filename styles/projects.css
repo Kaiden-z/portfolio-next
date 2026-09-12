@@ -12,3 +12,10 @@
 .projects-list {
     margin: 2rem;
 }
+
+.account-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

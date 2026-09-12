@@ -118,20 +118,20 @@ export default function Projects() {
             />
 
             <section className="account-links">
-                <h1>
-                    See More:
-                </h1>
+                <p>
+                    See more of my work:
+                </p>
                 <Button
                     icon={<GitHubIcon />}
                     href="https://github.com/Kaiden-z"
                 >
-                    GitHub
+                    github.com/Kaiden-z
                 </Button>
                 <Button
                     icon={<ItchIcon />}
                     href="https://kaiden-z.itch.io/"
                 >
-                    Itch.io
+                    kaiden-z.itch.io
                 </Button>
             </section>
 

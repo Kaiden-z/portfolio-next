@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Button from "@/components/Button";
 import DownloadIcon from "@/icons/DownloadIcon";
@@ -5,8 +6,12 @@ import DownloadIcon from "@/icons/DownloadIcon";
 export default function Header() {
     return (
         <header className="flex items-center justify-between p-4 border-b">
-            <h1>Kaiden Zapanta</h1>
+            <Link href="/" className="site-logo">
+                KAIDENZAPANTA.DEV
+            </Link>
+
             <Navbar />
+
             <Button
                 icon={<DownloadIcon />}
                 href="/KaidenZapantaResume2026.pdf"
