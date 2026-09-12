@@ -45,7 +45,6 @@ export default function About() {
             <section className="past-works-section">
                 <Button
                     icon={<CompassIcon />}
-                    variant="secondary"
                     href="/projects"
                 >
                     Explore my past work

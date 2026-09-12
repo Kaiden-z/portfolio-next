@@ -1,5 +1,9 @@
 import { Project } from "@/types/project";
 import MediaSlider from "./MediaSlider";
+import Button from "./Button";
+import GitHubIcon from "@/icons/GitHubIcon";
+import ItchIcon from "@/icons/ItchIcon";
+import SteamIcon from "@/icons/SteamIcon";
 
 export default function ProjectCard({
     name,
@@ -28,6 +32,42 @@ export default function ProjectCard({
                 </div>
 
                 <p>{description}</p>
+
+                {(githubUrl || itchUrl || steamUrl) && (
+                    <div className="project-links">
+                        <h2>Available on</h2>
+                        <div className="project-links-buttons">
+                            {steamUrl && (
+                                <Button
+                                    icon={<SteamIcon/>}
+                                    href={steamUrl}
+                                >
+                                    Steam
+                                </Button>
+                            )}
+
+                            {itchUrl && (
+                                <Button
+                                    icon={<ItchIcon/>}
+                                    href={itchUrl}
+                                >
+                                    Itch.io
+                                </Button>
+                            )}
+
+                            {githubUrl && (
+                                <Button
+                                    icon={<GitHubIcon/>}
+                                    href={githubUrl}
+                                >
+                                    GitHub
+                                </Button>
+                            )}
+                        </div>
+                    </div>
+                )}
+                
+                    
             </div>
         </article>
     );

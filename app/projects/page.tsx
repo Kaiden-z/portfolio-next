@@ -53,7 +53,10 @@ const projects : Project[] = [
                 type: "image",
                 src: "images/projects/vomd/vomdScreenshot3.jpg"
             }
-        ]
+        ],
+        steamUrl: "https://store.steampowered.com/app/3733590/Vegetables_of_Mass_Destruction/",
+        itchUrl: "https://ronghuaa.itch.io/veggies-of-mass-destruction",
+        githubUrl: "https://github.com/Kaiden-z/Vegetables-Of-Mass-Destruction"
     },
     {
         name: "Procedural Animation Tool",
@@ -77,11 +80,12 @@ const projects : Project[] = [
                 type: "image",
                 src: "images/projects/vomd/vomdScreenshot3.jpg"
             }
-        ]
+        ],
+        githubUrl: "https://github.com/Kaiden-z/Godot-Procedural-Animation-Tool"
     },
     {
         name: "FG Framework",
-        tags: ["Unreal", "C++", "Tooling", "In Development"],
+        tags: ["Unreal Engine 5", "C++", "Tooling", "In Development"],
         description: "A simple 2D platformer game.",
         media: [
             {
@@ -101,7 +105,8 @@ const projects : Project[] = [
                 type: "image",
                 src: "images/projects/vomd/vomdScreenshot3.jpg"
             }
-        ]
+        ],
+        githubUrl: "https://github.com/Kaiden-z/FGFramework"
     },
 ]
 
@@ -112,17 +117,18 @@ export default function Projects() {
                 title="PROJECTS"
             />
 
-            <section className="project-links">
+            <section className="account-links">
+                <h1>
+                    See More:
+                </h1>
                 <Button
                     icon={<GitHubIcon />}
-                    variant="secondary"
                     href="https://github.com/Kaiden-z"
                 >
                     GitHub
                 </Button>
                 <Button
                     icon={<ItchIcon />}
-                    variant="secondary"
                     href="https://kaiden-z.itch.io/"
                 >
                     Itch.io

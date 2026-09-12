@@ -10,7 +10,6 @@ export default function Header() {
             <Button
                 icon={<DownloadIcon />}
                 href="/KaidenZapantaResume2026.pdf"
-                variant="secondary"
             >
                 Resume / CV
             </Button>

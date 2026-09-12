@@ -1,27 +1,26 @@
 "use client";
 
 type ButtonProps = {
+    className?: string
     icon?: React.ReactNode;
     children: React.ReactNode;
     onClick?: () => void;
     href?: string;
-    variant?: "primary" | "secondary";
 };
 
 export default function Button({
+    className,
     icon,
     children,
     onClick,
     href,
-    variant = "primary",
 }: ButtonProps) {
-    const className = `button button-${variant}`;
 
     if (href) {
         return (
             <a
                 href={href}
-                className={className}
+                className={`button button-primary ${className}`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -33,7 +32,7 @@ export default function Button({
     
     return (
         <button
-            className={`button button-${variant}`}
+            className={`button button-primary ${className}`}
             onClick={onClick}
         >
             {icon && <span className="icon">{icon}</span>}
