@@ -1,6 +1,8 @@
 "use client"
 
+import Button from "@/components/Button";
 import MediaSlider from "@/components/MediaSlider";
+import ArrowRightUpIcon from "@/icons/ArrowRightUpIcon";
 import { Media } from "@/types/media"
 
 const featured_media : Media[] = [
@@ -49,9 +51,12 @@ export default function Home() {
                             A golf-themed isometric action rogue-like.
                         </p>
 
-                        <a href="/projects">
-                            View project →
-                        </a>
+                        <Button
+                            icon={<ArrowRightUpIcon/>}
+                            href="https://pseudomancer.studio/archive.html"
+                        >
+                            Check out our dev log
+                        </Button>
                     </div>
 
                     <div className="featured-project-media">

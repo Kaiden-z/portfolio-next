@@ -65,29 +65,17 @@
 }
 
 .featured-project h3 {
-    margin: 0 0 1rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
 
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    line-height: 0.95;
+    font-size: clamp(1.5rem, 3.5vw, 7rem);
+    line-height: 1.2;
+    font-weight: 700;
     letter-spacing: -0.05em;
 }
 
 .featured-project p {
     max-width: 400px;
-    margin: 0 0 1.5rem;
-
-    color: var(--muted-foreground);
-}
-
-.featured-project a {
-    color: var(--foreground);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.featured-project a:hover {
-    text-decoration: underline;
 }
 
 .featured-project-media {

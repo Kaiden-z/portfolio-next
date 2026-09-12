@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="flex items-center justify-between p-4 border-b">
             <Link href="/" className="site-logo">
-                KAIDENZAPANTA.DEV
+                KAIDENZAPANTA<span className="site-logo-ender">.DEV</span>
             </Link>
 
             <Navbar />

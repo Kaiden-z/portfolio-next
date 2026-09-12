@@ -10,9 +10,8 @@ export default function Contact() {
             <section className="contact">
                 <div className="contact-intro">
                     <p>
-                        Have a project in mind, want to collaborate, or just want
-                        to get in touch? Feel free to reach out through email or
-                        connect with me on LinkedIn.
+                        Interested in connecting, talking games, or exploring what’s next? 
+                        Feel free to reach out through email or connect with me on LinkedIn.
                     </p>
                 </div>
 

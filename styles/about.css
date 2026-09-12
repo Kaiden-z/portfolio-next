@@ -1,18 +1,57 @@
 .about-section {
     display: grid;
-    grid-template-columns: minmax(0, 600px) 500px;
+    grid-template-columns: minmax(0, 650px) 400px;
     max-width: 1150px;
-    gap: 3rem;
+    gap: 5rem;
     align-items: start;
-    margin: 2rem auto;
-}
-
-.about-text {
-    max-width: 750px;
+    margin: 3rem auto;
 }
 
 .about-text p {
     margin: 0 0 1.5rem;
+    line-height: 1.75;
+}
+
+.about-section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 3.5rem 0 1.25rem;
+}
+
+.about-section-heading:first-child {
+    margin-top: 0;
+}
+
+.about-section-heading span {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+}
+
+.about-section-heading h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.about-sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+
+.about-image {
+    position: relative;
+}
+
+.about-image::after {
+    content: "";
+    position: absolute;
+    inset: 12px -12px -12px 12px;
+    border: 1px solid currentColor;
+    border-radius: 2rem;
+    opacity: 0.25;
+    z-index: -1;
 }
 
 .about-image img {
@@ -22,25 +61,64 @@
     border-radius: 2rem;
 }
 
-.past-works-section {
-    margin-top: 1rem;
-    text-align: center;
+.developer-interests {
+    margin-top: 3rem;
 }
 
-.past-works-section .button {
-    padding: 1rem 1.5rem;
-    font-size: 1.5rem;
+.cta-label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.interests-label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    opacity: 0.5;
+}
+
+.interest-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid currentColor;
+}
+
+.interest-group span {
+    margin-bottom: 0.2rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    opacity: 0.5;
+}
+
+.interest-group strong {
+    font-weight: 500;
+}
+
+.past-works-section {
+    margin: 0 auto 2rem;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .about-section {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
 
-    .about-image {
-        width: 100%;
+    .about-sidebar {
+        position: static;
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    .developer-interests {
+        margin-top: 3rem;
     }
 }
