@@ -1,7 +1,7 @@
-import ChevronLeft from "@/icons/ChevronLeft";
-import ChevronRight from "@/icons/ChevronRight";
+import ChevronLeftIcon from "@/icons/ChevronLeftIcon";
+import ChevronRightIcon from "@/icons/ChevronRightIcon";
 import { Media } from "@/types/media";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 
 export default function MediaSlider({ media }: { media: Media[] }) {
@@ -31,7 +31,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                         onClick={prevSlide}
                         aria-label="Previous media"
                     >
-                        <ChevronLeft />
+                        <ChevronLeftIcon />
                     </button>
                 )}
 
@@ -43,12 +43,14 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                             controls
                             loop
                             className="media-content"
+                            style={{ objectFit: currentMedia.fit ?? "cover" }}
                         />
                     ) : (
                         <img
                             src={currentMedia.src}
                             alt={currentMedia.alt}
                             className="media-content"
+                            style={{ objectFit: currentMedia.fit ?? "cover" }}
                         /> 
                     )}
                 </div>
@@ -59,13 +61,11 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                         onClick={nextSlide}
                         aria-label="Next media"
                     >
-                        <ChevronRight />
+                        <ChevronRightIcon />
                     </button>
                 )}
             </div>
-            
 
-            {/* Dots */}
             {media.length > 1 && (
                 <div className="slider-dots">
                 {media.map((_, index) => (

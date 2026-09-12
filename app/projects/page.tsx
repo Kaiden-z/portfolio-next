@@ -54,12 +54,23 @@ const projects : Project[] = [
                 src: "images/projects/vomd/vomdScreenshot3.jpg"
             }
         ],
-        steamUrl: "https://store.steampowered.com/app/3733590/Vegetables_of_Mass_Destruction/",
-        itchUrl: "https://ronghuaa.itch.io/veggies-of-mass-destruction",
-        githubUrl: "https://github.com/Kaiden-z/Vegetables-Of-Mass-Destruction"
+        links: [
+            {
+                site: "Steam",
+                url: "https://store.steampowered.com/app/3733590/Vegetables_of_Mass_Destruction/"
+            },
+            {
+                site: "Itch.io",
+                url: "https://ronghuaa.itch.io/veggies-of-mass-destruction"
+            },
+            {
+                site: "GitHub",
+                url: "https://github.com/Kaiden-z/Vegetables-Of-Mass-Destruction"
+            }
+        ]
     },
     {
-        name: "Procedural Animation Tool",
+        name: "Godot Procedural Animation Tool",
         tags: ["Godot", "C#", "Tooling"],
         description: "A simple 2D platformer game.",
         media: [
@@ -81,7 +92,50 @@ const projects : Project[] = [
                 src: "images/projects/vomd/vomdScreenshot3.jpg"
             }
         ],
-        githubUrl: "https://github.com/Kaiden-z/Godot-Procedural-Animation-Tool"
+        links: [
+            {
+                site: "GitHub",
+                url: "https://github.com/Kaiden-z/Godot-Procedural-Animation-Tool"
+            }
+        ]
+    },
+    {
+        name: "Architect Villager Mod",
+        tags: ["Java", "Modding"],
+        description: "A simple 2D platformer game.",
+        media: [
+            {
+                type: "image",
+                src: "images/projects/architectVillagerMod/architect-villager-mod-blueprint.png",
+                fit: "contain"
+            },
+            {
+                type: "image",
+                src: "images/projects/architectVillagerMod/architect-villager.png"
+            },
+            {
+                type: "image",
+                src: "images/projects/architectVillagerMod/architect-villager-mod-crafting.png"
+            },
+            {
+                type: "image",
+                src: "images/projects/architectVillagerMod/fletcher-blueprint.png"
+            },
+            {
+                type: "image",
+                src: "images/projects/architectVillagerMod/example-village.png"
+            }
+        ],
+        links: [
+            {
+                site: "CurseForge",
+                url: "https://www.curseforge.com/minecraft/mc-mods/architect-villager-mod"
+            },
+            {
+                site: "GitHub",
+                url: "https://github.com/Kaiden-z/ArchitectVillagerMod"
+            }
+        ]
     },
     {
         name: "FG Framework",
@@ -106,7 +160,12 @@ const projects : Project[] = [
                 src: "images/projects/vomd/vomdScreenshot3.jpg"
             }
         ],
-        githubUrl: "https://github.com/Kaiden-z/FGFramework"
+        links: [
+            {
+                site: "GitHub",
+                url: "https://github.com/Kaiden-z/FGFramework"
+            }
+        ]
     },
 ]
 

@@ -4,16 +4,31 @@ import Button from "./Button";
 import GitHubIcon from "@/icons/GitHubIcon";
 import ItchIcon from "@/icons/ItchIcon";
 import SteamIcon from "@/icons/SteamIcon";
+import CurseForgeIcon from "@/icons/CurseForgeIcon";
 
 export default function ProjectCard({
     name,
     tags,
     description,
     media,
-    githubUrl,
-    itchUrl,
-    steamUrl,
+    links
 }: Project) {
+
+    const getLinkIcon = (site: string) => {
+        switch (site) {
+            case "GitHub":
+                return <GitHubIcon />;
+            case "Itch.io":
+                return <ItchIcon />;
+            case "Steam":
+                return <SteamIcon />;
+            case "CurseForge":
+                return <CurseForgeIcon />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <article className="project-card border">
             <div className="project-card-media">
@@ -33,41 +48,23 @@ export default function ProjectCard({
 
                 <p>{description}</p>
 
-                {(githubUrl || itchUrl || steamUrl) && (
+                {links && links.length > 0 && (
                     <div className="project-links">
                         <h2>Available on</h2>
+
                         <div className="project-links-buttons">
-                            {steamUrl && (
+                            {links.map((link) => (
                                 <Button
-                                    icon={<SteamIcon/>}
-                                    href={steamUrl}
+                                    key={link.site}
+                                    icon={getLinkIcon(link.site)}
+                                    href={link.url}
                                 >
-                                    Steam
+                                    {link.site}
                                 </Button>
-                            )}
-
-                            {itchUrl && (
-                                <Button
-                                    icon={<ItchIcon/>}
-                                    href={itchUrl}
-                                >
-                                    Itch.io
-                                </Button>
-                            )}
-
-                            {githubUrl && (
-                                <Button
-                                    icon={<GitHubIcon/>}
-                                    href={githubUrl}
-                                >
-                                    GitHub
-                                </Button>
-                            )}
+                            ))}
                         </div>
                     </div>
                 )}
-                
-                    
             </div>
         </article>
     );

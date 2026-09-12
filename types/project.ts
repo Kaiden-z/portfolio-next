@@ -5,7 +5,10 @@ export type Project = {
     tags: string[];
     description: string;
     media: Media[];
-    githubUrl?: string;
-    itchUrl?: string;
-    steamUrl?: string;
+    links?: Link[];
+}
+
+export type Link = {
+    site: "GitHub" | "Itch.io" | "Steam" | "CurseForge";
+    url: string;
 }
