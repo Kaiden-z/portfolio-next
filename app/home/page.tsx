@@ -53,7 +53,7 @@ export default function Home() {
                 variants={itemVariants}
             >
                 <motion.div
-                    className="line"
+                    className="featured-project-line"
                     variants={lineVariants}
                 />
                 <div className="featured-project-header">
@@ -91,7 +91,7 @@ export default function Home() {
                     </motion.div>
                 </motion.div>
                 <motion.div
-                    className="line"
+                    className="featured-project-line"
                     variants={lineVariants}
                 />
             </motion.section>
