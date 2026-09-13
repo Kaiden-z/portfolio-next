@@ -314,6 +314,7 @@ const projects : Project[] = [
 export default function Projects() {
     return (
         <motion.main
+            className="projects"
             variants={mainVariants}
             initial="hidden"
             animate="show"
