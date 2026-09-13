@@ -5,6 +5,8 @@ import GitHubIcon from "@/icons/GitHubIcon";
 import ItchIcon from "@/icons/ItchIcon";
 import SteamIcon from "@/icons/SteamIcon";
 import CurseForgeIcon from "@/icons/CurseForgeIcon";
+import { motion } from "motion/react";
+import { itemVariants } from "@/animations/variants/variants";
 
 export default function ProjectCard({
     name,
@@ -30,7 +32,10 @@ export default function ProjectCard({
     };
 
     return (
-        <article className="project-card border">
+        <motion.article 
+            className="project-card border"
+            variants={itemVariants}
+        >
             <div className="project-card-media">
                 <MediaSlider media={media} />
             </div>
@@ -66,6 +71,6 @@ export default function ProjectCard({
                     </div>
                 )}
             </div>
-        </article>
+        </motion.article>
     );
 }

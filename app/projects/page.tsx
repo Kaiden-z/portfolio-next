@@ -1,11 +1,13 @@
 "use client";
 
+import { itemVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
 import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
 import ProjectCard from "@/components/ProjectCard";
 import GitHubIcon from "@/icons/GitHubIcon";
 import ItchIcon from "@/icons/ItchIcon";
 import { Project } from "@/types/project";
+import { motion } from "motion/react";
 
 const projects : Project[] = [
     {
@@ -171,34 +173,51 @@ const projects : Project[] = [
 
 export default function Projects() {
     return (
-        <main>
+        <motion.main
+            variants={mainVariants}
+            initial="hidden"
+            animate="show"
+        >
             <PageHeader
                 title="PROJECTS"
             />
 
-            <section className="account-links">
-                <p>
+            <motion.section 
+                className="account-links"
+                variants={sectionVariants}>
+                <motion.p
+                    variants={itemVariants}
+                >
                     See more of my work:
-                </p>
-                <Button
-                    icon={<GitHubIcon />}
-                    href="https://github.com/Kaiden-z"
+                </motion.p>
+                <motion.div
+                    variants={itemVariants}
                 >
-                    github.com/Kaiden-z
-                </Button>
-                <Button
-                    icon={<ItchIcon />}
-                    href="https://kaiden-z.itch.io/"
+                    <Button
+                        icon={<GitHubIcon />}
+                        href="https://github.com/Kaiden-z"
+                    >
+                        github.com/Kaiden-z
+                    </Button>
+                </motion.div>
+ 
+                <motion.div
+                    variants={itemVariants}
                 >
-                    kaiden-z.itch.io
-                </Button>
-            </section>
+                    <Button
+                        icon={<ItchIcon />}
+                        href="https://kaiden-z.itch.io/"
+                    >
+                        kaiden-z.itch.io
+                    </Button>
+                </motion.div>
+            </motion.section>
 
             <section className="projects-list">
                 {projects.map((project) => (
                     <ProjectCard key={project.name} {...project} />
                 ))}
             </section>
-        </main>
+        </motion.main>
     );
 }

@@ -1,9 +1,11 @@
 "use client"
 
+import { itemVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
 import Button from "@/components/Button";
 import MediaSlider from "@/components/MediaSlider";
 import ArrowRightUpIcon from "@/icons/ArrowRightUpIcon";
 import { Media } from "@/types/media"
+import { motion } from "motion/react";
 
 const featured_media : Media[] = [
     {
@@ -26,25 +28,38 @@ const featured_media : Media[] = [
 
 export default function Home() {
     return (
-        <main className="hero">
+        <motion.main 
+            className="hero"
+            variants={mainVariants}
+            initial="hidden"
+            animate="show"
+        >
             <section className="hero-intro">
-                <h1>
-                    KAIDEN
-                    <br />
-                    ZAPANTA
-                </h1>
+                <div>
+                    <motion.h1 variants={itemVariants}>KAIDEN</motion.h1>
+                    <motion.h1 variants={itemVariants}>ZAPANTA</motion.h1>
+                </div>
 
-                <h2>Software Engineer | Gameplay Programmer</h2>
+                <motion.h2 variants={itemVariants}>Software Engineer | Gameplay Programmer</motion.h2>
             </section>
 
-            <section className="featured-project">
+            <motion.section 
+                className="featured-project"
+                variants={itemVariants}
+            >
                 <div className="featured-project-header">
                     <span>01</span>
                     <span>FEATURED PROJECT</span>
                 </div>
 
-                <div className="featured-project-content">
-                    <div className="featured-project-info">
+                <motion.div
+                    className="featured-project-content"
+                    variants={sectionVariants}
+                >
+                    <motion.div 
+                        className="featured-project-info"
+                        variants={itemVariants}
+                    >
                         <h3>Golfin' Slayer</h3>
 
                         <p>
@@ -57,13 +72,16 @@ export default function Home() {
                         >
                             Check out our dev log
                         </Button>
-                    </div>
+                    </motion.div>
 
-                    <div className="featured-project-media">
+                    <motion.div 
+                        className="featured-project-media"
+                        variants={itemVariants}
+                    >
                         <MediaSlider media={featured_media} />
-                    </div>
-                </div>
-            </section>
-        </main>
+                    </motion.div>
+                </motion.div>
+            </motion.section>
+        </motion.main>
     );
 }

@@ -113,26 +113,42 @@ export default function About() {
 
                 <motion.aside
                     className="about-sidebar"
-                    variants={itemVariants}
+                    variants={sectionVariants}
                 >
-                    <div className="about-image">
+                    <motion.div 
+                        className="about-image"
+                        variants={itemVariants}
+                    >
                         <img src="/images/profile.jpg" alt="Kaiden Zapanta" />
-                    </div>
+                    </motion.div>
 
-                    <div className="developer-interests">
-                        <span className="interests-label">DEVELOPER</span>
+                    <motion.div 
+                        className="developer-interests"
+                        variants={sectionVariants}
+                    >
+                        <motion.span 
+                            className="interests-label"
+                            variants={itemVariants}
+                        >
+                            DEVELOPER
+                        </motion.span>
 
-                        <div className="interest-group">
+                        <motion.div 
+                            className="interest-group"
+                            variants={itemVariants}>
                             <span>FOCUS</span>
                             <strong>Programming</strong>
-                        </div>
+                        </motion.div>
 
-                        <div className="interest-group">
+                        <motion.div 
+                            className="interest-group"
+                            variants={itemVariants}
+                        >
                             <span>INTERESTS</span>
                             <strong>Gameplay Systems</strong>
                             <strong>Developer Tools</strong>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </motion.aside>
             </motion.section>
 
