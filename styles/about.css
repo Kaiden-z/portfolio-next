@@ -89,13 +89,6 @@
     padding: 1.25rem 0;
 }
 
-.interest-group-line {
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    transform-origin: left;
-}
-
 .interest-group span {
     margin-bottom: 0.2rem;
     font-size: 0.7rem;

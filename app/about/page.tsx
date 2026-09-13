@@ -137,7 +137,7 @@ export default function About() {
                             className="interest-group"
                             variants={itemVariants}>
                             <motion.div
-                                className="interest-group-line"
+                                className="line"
                                 variants={lineVariants}
                             />
                             <span>FOCUS</span>
@@ -149,7 +149,7 @@ export default function About() {
                             variants={itemVariants}
                         >
                             <motion.div
-                                className="interest-group-line"
+                                className="line"
                                 variants={lineVariants}
                             />
                             <span>INTERESTS</span>

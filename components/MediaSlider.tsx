@@ -1,3 +1,5 @@
+"use client"
+
 import ChevronLeftIcon from "@/icons/ChevronLeftIcon";
 import ChevronRightIcon from "@/icons/ChevronRightIcon";
 import { motion } from "motion/react";

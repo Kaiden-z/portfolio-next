@@ -1,11 +1,12 @@
 "use client"
 
-import { itemVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
+import { itemVariants, lineVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
 import Button from "@/components/Button";
 import MediaSlider from "@/components/MediaSlider";
 import ArrowRightUpIcon from "@/icons/ArrowRightUpIcon";
 import { Media } from "@/types/media"
 import { motion } from "motion/react";
+import { line } from "motion/react-client";
 
 const featured_media : Media[] = [
     {
@@ -51,6 +52,10 @@ export default function Home() {
                 className="featured-project"
                 variants={itemVariants}
             >
+                <motion.div
+                    className="line"
+                    variants={lineVariants}
+                />
                 <div className="featured-project-header">
                     <span>01</span>
                     <span>FEATURED PROJECT</span>
@@ -85,6 +90,10 @@ export default function Home() {
                         <MediaSlider media={featured_media} />
                     </motion.div>
                 </motion.div>
+                <motion.div
+                    className="line"
+                    variants={lineVariants}
+                />
             </motion.section>
         </motion.main>
     );
