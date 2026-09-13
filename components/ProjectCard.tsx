@@ -7,6 +7,7 @@ import SteamIcon from "@/icons/SteamIcon";
 import CurseForgeIcon from "@/icons/CurseForgeIcon";
 import { motion } from "motion/react";
 import { itemVariants } from "@/animations/variants/variants";
+import ArrowRightUpIcon from "@/icons/ArrowRightUpIcon";
 
 export default function ProjectCard({
     name,
@@ -26,6 +27,8 @@ export default function ProjectCard({
                 return <SteamIcon />;
             case "CurseForge":
                 return <CurseForgeIcon />;
+            case "Devlog":
+                return <ArrowRightUpIcon />;
             default:
                 return null;
         }
@@ -51,11 +54,11 @@ export default function ProjectCard({
                     ))}
                 </div>
 
-                <p>{description}</p>
+                {description}
 
                 {links && links.length > 0 && (
                     <div className="project-links">
-                        <h2>Available on</h2>
+                        <h2>{name === "Golfin' Slayer" ? "" : "Available on"}</h2>
 
                         <div className="project-links-buttons">
                             {links.map((link) => (
@@ -64,7 +67,7 @@ export default function ProjectCard({
                                     icon={getLinkIcon(link.site)}
                                     href={link.url}
                                 >
-                                    {link.site}
+                                    {name === "Golfin' Slayer" ? "Checkout our dev log" : link.site}
                                 </Button>
                             ))}
                         </div>

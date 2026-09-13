@@ -14,16 +14,20 @@ const featured_media : Media[] = [
         src: "images/projects/golfinSlayer/golfinSlayerTitle.png",
     },
     {
-        type: "image",
-        src: "images/projects/vomd/vomdScreenshot1.jpg"
+        type: "video",
+        src: "videos/projects/golfinSlayerDemo.mp4"
     },
     {
         type: "image",
-        src: "images/projects/vomd/vomdScreenshot2.jpg"
+        src: "images/projects/golfinSlayer/golfinSlayer1.png"
     },
     {
         type: "image",
-        src: "images/projects/vomd/vomdScreenshot3.jpg"
+        src: "images/projects/golfinSlayer/golfinSlayer2.png"
+    },
+    {
+        type: "image",
+        src: "images/projects/golfinSlayer/golfinSlayer3.png"
     }
 ]
 
@@ -72,7 +76,9 @@ export default function Home() {
                         <h3>Golfin' Slayer</h3>
 
                         <p>
-                            A golf-themed isometric action rogue-like.
+                            A top-down, isometric action roguelike inspired by <i>Kirby’s Dream Course</i>. 
+                            Battle your way through treacherous golf courses, filled with the Lich’s monstrous creations, 
+                            and help Caddy restore golf to its rightful place as the most popular sport on television.
                         </p>
 
                         <Button

@@ -33,7 +33,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
         <div className="media-slider">
 
             <div className="media-main">
-                {media.length > 1 && (
+                {media && (
                     <button
                         className="slider-arrow slider-arrow-left"
                         onClick={prevSlide}
@@ -80,7 +80,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                     </motion.div>
                 </div>
 
-                {media.length > 1 && (
+                {media && (
                     <button
                         className="slider-arrow slider-arrow-right"
                         onClick={nextSlide}
@@ -91,7 +91,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                 )}
             </div>
 
-            {media.length > 1 && (
+            {media && (
                 <div className="slider-dots">
                 {media.map((_, index) => (
                     <button
