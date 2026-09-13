@@ -1,8 +1,10 @@
 import ChevronLeftIcon from "@/icons/ChevronLeftIcon";
 import ChevronRightIcon from "@/icons/ChevronRightIcon";
-import { AnimatePresence, easeInOut, motion } from "motion/react";
+import { motion } from "motion/react";
 import { Media } from "@/types/media";
 import { useState } from "react";
+import { Plyr } from "plyr-react";
+import "plyr-react/plyr.css";
 
 
 export default function MediaSlider({ media }: { media: Media[] }) {
@@ -43,13 +45,20 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                         {media.map((item, _) => (
                             <div className="media-slide" key={item.src}>
                                 {item.type === "video" ? (
-                                    <video
-                                        src={item.src}
-                                        poster={item.poster}
-                                        controls
-                                        loop
-                                        className="media-content"
-                                        style={{ objectFit: item.fit ?? "cover" }}
+                                    <Plyr
+                                        source={{
+                                            type: "video",
+                                            sources: [
+                                                {
+                                                    src: item.src,
+                                                    type: "video/mp4",
+                                                },
+                                            ],
+                                            poster: item.poster,
+                                        }}
+                                        options={{
+                                            volume: 0.5,
+                                        }}
                                     />
                                 ) : (
                                     <img

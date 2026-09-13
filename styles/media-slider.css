@@ -71,3 +71,9 @@
     background: #fff;
     transform: scale(1.4);
 }
+
+.plyr {
+    --plyr-color-main: transparent;
+    --plyr-range-track-height: 2px;
+    --plyr-control-icon-size: 16px;
+}
