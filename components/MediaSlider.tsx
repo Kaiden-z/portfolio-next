@@ -5,9 +5,14 @@ import ChevronRightIcon from "@/icons/ChevronRightIcon";
 import { motion } from "motion/react";
 import { Media } from "@/types/media";
 import { useState } from "react";
-import { Plyr } from "plyr-react";
-import "plyr-react/plyr.css";
+import dynamic from "next/dynamic";
 
+const Plyr = dynamic(
+    () => import("plyr-react").then((mod) => mod.Plyr),
+    {
+        ssr: false,
+    }
+);
 
 export default function MediaSlider({ media }: { media: Media[] }) {
     const [currentIndex, setCurrentIndex] = useState(0);
