@@ -13,11 +13,11 @@ export const sectionVariants: Variants = {
     show: {
         transition: {
             staggerChildren: 0.1
-        }
-    }
-}
+        },
+    },
+};
 
-export const itemVariants: Variants  = {
+export const itemVariants: Variants = {
     hidden: {
         opacity: 0,
         y: 15,
@@ -28,6 +28,19 @@ export const itemVariants: Variants  = {
         transition: {
             duration: 0.4,
             ease: easeOut
+        },
+    },
+};
+
+export const lineVariants: Variants = {
+    hidden: {
+        scaleX: 0,
+    },
+    show: {
+        scaleX: 1,
+        transition: {
+            duration: 0.5,
+            ease: easeOut,
         },
     },
 };

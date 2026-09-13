@@ -3,7 +3,7 @@
 import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
 import CompassIcon from "@/icons/CompassIcon";
-import { itemVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
+import { itemVariants, lineVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
 import { motion } from "motion/react";
 
 export default function About() {
@@ -136,6 +136,10 @@ export default function About() {
                         <motion.div 
                             className="interest-group"
                             variants={itemVariants}>
+                            <motion.div
+                                className="interest-group-line"
+                                variants={lineVariants}
+                            />
                             <span>FOCUS</span>
                             <strong>Programming</strong>
                         </motion.div>
@@ -144,6 +148,10 @@ export default function About() {
                             className="interest-group"
                             variants={itemVariants}
                         >
+                            <motion.div
+                                className="interest-group-line"
+                                variants={lineVariants}
+                            />
                             <span>INTERESTS</span>
                             <strong>Gameplay Systems</strong>
                             <strong>Developer Tools</strong>

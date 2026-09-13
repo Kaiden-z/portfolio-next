@@ -5,7 +5,7 @@ import DownloadIcon from "@/icons/DownloadIcon";
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-between p-4 border-b">
+        <header className="flex items-center justify-between p-4">
             <Link href="/" className="site-logo">
                 KAIDENZAPANTA<span className="site-logo-ender">.DEV</span>
             </Link>

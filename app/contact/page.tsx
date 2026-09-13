@@ -4,7 +4,8 @@ import PageHeader from "@/components/PageHeader";
 import LinkedInIcon from "@/icons/LinkedInIcon";
 import EmailIcon from "@/icons/EmailIcon";
 import { motion } from "motion/react";
-import { itemVariants, mainVariants } from "@/animations/variants/variants";
+import { itemVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
+import { section } from "motion/react-client";
 
 export default function Contact() {
     return (
@@ -26,7 +27,10 @@ export default function Contact() {
                     </p>
                 </motion.div>
 
-                <div className="contact-info">
+                <motion.div 
+                    className="contact-info"
+                    variants={sectionVariants}
+                >
                     <motion.a
                         className="contact-item border"
                         href="mailto:kaiden.zapanta@gmail.com"
@@ -58,7 +62,7 @@ export default function Contact() {
                             <p>linkedin.com/in/kaidenzapanta</p>
                         </div>
                     </motion.a>
-                </div>
+                </motion.div>
             </section>
         </motion.main>
     );

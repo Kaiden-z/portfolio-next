@@ -36,6 +36,10 @@
 }
 
 .navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: flex;
     gap: 2rem;
     padding: 1rem 0;

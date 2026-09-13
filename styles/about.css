@@ -87,7 +87,13 @@
     flex-direction: column;
     gap: 0.4rem;
     padding: 1.25rem 0;
-    border-top: 1px solid currentColor;
+}
+
+.interest-group-line {
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform-origin: left;
 }
 
 .interest-group span {
