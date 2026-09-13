@@ -1,5 +1,6 @@
 import ChevronLeftIcon from "@/icons/ChevronLeftIcon";
 import ChevronRightIcon from "@/icons/ChevronRightIcon";
+import { AnimatePresence, easeInOut, motion } from "motion/react";
 import { Media } from "@/types/media";
 import { useState } from "react";
 
@@ -18,9 +19,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
     const prevSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + media.length) % media.length);
     }
-
-    const currentMedia = media[currentIndex];
-
+    
     return (
         <div className="media-slider">
 
@@ -36,23 +35,33 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                 )}
 
                 <div className="media-container">
-                    {currentMedia.type === "video" ? (
-                        <video
-                            src={currentMedia.src}
-                            poster={currentMedia.poster}
-                            controls
-                            loop
-                            className="media-content"
-                            style={{ objectFit: currentMedia.fit ?? "cover" }}
-                        />
-                    ) : (
-                        <img
-                            src={currentMedia.src}
-                            alt={currentMedia.alt}
-                            className="media-content"
-                            style={{ objectFit: currentMedia.fit ?? "cover" }}
-                        /> 
-                    )}
+                    <motion.div
+                        className="media-track"
+                        animate={{ x: `-${currentIndex * 100}%`}}
+                        transition={{ duration: 0.4, ease: "easeInOut"}}
+                    >
+                        {media.map((item, _) => (
+                            <div className="media-slide" key={item.src}>
+                                {item.type === "video" ? (
+                                    <video
+                                        src={item.src}
+                                        poster={item.poster}
+                                        controls
+                                        loop
+                                        className="media-content"
+                                        style={{ objectFit: item.fit ?? "cover" }}
+                                    />
+                                ) : (
+                                    <img
+                                        src={item.src}
+                                        alt={item.alt}
+                                        className="media-content"
+                                        style={{ objectFit: item.fit ?? "cover" }}
+                                    />
+                                )}
+                            </div>
+                        ))}
+                    </motion.div>
                 </div>
 
                 {media.length > 1 && (
