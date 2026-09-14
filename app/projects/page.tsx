@@ -31,23 +31,23 @@ const projects : Project[] = [
         media: [
             {
                 type: "image",
-                src: "images/projects/golfinSlayer/golfinSlayerTitle.png",
+                src: "/images/projects/golfinSlayer/golfinSlayerTitle.png",
             },
             {
                 type: "video",
-                src: "videos/projects/golfinSlayerDemo.mp4"
+                src: "/videos/projects/golfinSlayerDemo.mp4"
             },
             {
                 type: "image",
-                src: "images/projects/golfinSlayer/golfinSlayer1.png"
+                src: "/images/projects/golfinSlayer/golfinSlayer1.png"
             },
             {
                 type: "image",
-                src: "images/projects/golfinSlayer/golfinSlayer2.png"
+                src: "/images/projects/golfinSlayer/golfinSlayer2.png"
             },
             {
                 type: "image",
-                src: "images/projects/golfinSlayer/golfinSlayer3.png"
+                src: "/images/projects/golfinSlayer/golfinSlayer3.png"
             }
         ],
         links: [
@@ -69,20 +69,20 @@ const projects : Project[] = [
         media: [
             {
                 type: "video",
-                src: "videos/projects/Vegetables of Mass Destruction Trailer.mp4",
-                poster: "images/projects/vomd/vomdTitle.png"
+                src: "/videos/projects/Vegetables of Mass Destruction Trailer.mp4",
+                poster: "/images/projects/vomd/vomdTitle.png"
             },
             {
                 type: "image",
-                src: "images/projects/vomd/vomdScreenshot1.jpg"
+                src: "/images/projects/vomd/vomdScreenshot1.jpg"
             },
             {
                 type: "image",
-                src: "images/projects/vomd/vomdScreenshot2.jpg"
+                src: "/images/projects/vomd/vomdScreenshot2.jpg"
             },
             {
                 type: "image",
-                src: "images/projects/vomd/vomdScreenshot3.jpg"
+                src: "/images/projects/vomd/vomdScreenshot3.jpg"
             }
         ],
         links: [
@@ -112,20 +112,20 @@ const projects : Project[] = [
         media: [
             {
                 type: "video",
-                src: "videos/projects/AKIK_Trailer.mp4",
-                poster: "images/projects/akik/AKIK_cover.png"
+                src: "/videos/projects/AKIK_Trailer.mp4",
+                poster: "/images/projects/akik/AKIK_cover.png"
             },
             {
                 type: "video",
-                src: "videos/projects/AKIK_Demo.mp4",
+                src: "/videos/projects/AKIK_Demo.mp4",
             },
             {
                 type: "image",
-                src: "images/projects/akik/AKIK_Gif1.gif"
+                src: "/images/projects/akik/AKIK_Gif1.gif"
             },
             {
                 type: "image",
-                src: "images/projects/akik/AKIK_Gif2.gif"
+                src: "/images/projects/akik/AKIK_Gif2.gif"
             }
         ],
         links: [
@@ -149,24 +149,24 @@ const projects : Project[] = [
         media: [
             {
                 type: "image",
-                src: "images/projects/architectVillagerMod/architect-villager-mod-blueprint.png",
+                src: "/images/projects/architectVillagerMod/architect-villager-mod-blueprint.png",
                 fit: "contain"
             },
             {
                 type: "image",
-                src: "images/projects/architectVillagerMod/architect-villager.png"
+                src: "/images/projects/architectVillagerMod/architect-villager.png"
             },
             {
                 type: "image",
-                src: "images/projects/architectVillagerMod/architect-villager-mod-crafting.png"
+                src: "/images/projects/architectVillagerMod/architect-villager-mod-crafting.png"
             },
             {
                 type: "image",
-                src: "images/projects/architectVillagerMod/fletcher-blueprint.png"
+                src: "/images/projects/architectVillagerMod/fletcher-blueprint.png"
             },
             {
                 type: "image",
-                src: "images/projects/architectVillagerMod/example-village.png"
+                src: "/images/projects/architectVillagerMod/example-village.png"
             }
         ],
         links: [
@@ -198,24 +198,24 @@ const projects : Project[] = [
         media: [
             {
                 type: "image",
-                src: "images/projects/circ/CIRCTitle.png",
+                src: "/images/projects/circ/CIRCTitle.png",
                 fit: "contain"
             },
             {
                 type: "image",
-                src: "images/projects/circ/CIRC1.png"
+                src: "/images/projects/circ/CIRC1.png"
             },
             {
                 type: "image",
-                src: "images/projects/circ/CIRC2.png"
+                src: "/images/projects/circ/CIRC2.png"
             },
             {
                 type: "image",
-                src: "images/projects/circ/CIRC3.png"
+                src: "/images/projects/circ/CIRC3.png"
             },
             {
                 type: "image",
-                src: "images/projects/circ/CIRC4.png"
+                src: "/images/projects/circ/CIRC4.png"
             }
         ],
         links: [
@@ -248,24 +248,24 @@ const projects : Project[] = [
         media: [
             {
                 type: "video",
-                src: "videos/projects/Doog_Demo.mp4",
-                poster: "images/projects/doog/DoogTitle.jpeg"
+                src: "/videos/projects/Doog_Demo.mp4",
+                poster: "/images/projects/doog/DoogTitle.jpeg"
             },
             {
                 type: "image",
-                src: "images/projects/doog/Doog1.png"
+                src: "/images/projects/doog/Doog1.png"
             },
             {
                 type: "image",
-                src: "images/projects/doog/Doog2.png"
+                src: "/images/projects/doog/Doog2.png"
             },
             {
                 type: "image",
-                src: "images/projects/doog/Doog3.png"
+                src: "/images/projects/doog/Doog3.png"
             },
             {
                 type: "image",
-                src: "images/projects/doog/Doog4.png"
+                src: "/images/projects/doog/Doog4.png"
             }
         ],
         links: [
@@ -299,7 +299,7 @@ const projects : Project[] = [
         media: [
             {
                 type: "image",
-                src: "images/WIP.png"
+                src: "/images/WIP.png"
             }
         ],
         links: [
