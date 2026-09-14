@@ -38,6 +38,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Inspect build output
+        run: |
+          echo "=== OUT DIRECTORY ==="
+          find ./out -maxdepth 2 -type f | sort
+          echo "=== ROOT FILES ==="
+          ls -la ./out
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
