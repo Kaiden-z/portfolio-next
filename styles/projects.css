@@ -1,4 +1,6 @@
-
+.projects {
+    margin: 0 4rem;
+}
 
 .project-links {
     display: flex;

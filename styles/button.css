@@ -1,25 +1,56 @@
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  transition: 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+
+    overflow: hidden;
+    isolation: isolate;
+    cursor: pointer;
 }
 
 .button-primary {
-  background: transparent;
-  color: var(--secondary-foreground);
-  border: 1px solid var(--border);
-  padding: 0.5rem 1rem;
-  border-radius: 9999rem;
-  transition: 0.2s ease;
+    background: transparent;
+    color: var(--secondary-foreground);
+    border: 1px solid var(--border);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .button-primary:hover {
-  background: var(--card-hover);
-  border-color: var(--border-hover);
+    background: var(--card-hover);
+    border-color: var(--border-hover);
 }
 
+.button-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40%;
+    height: 100%;
+
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    z-index: 0;
+}
+
+.button-content,
+.icon {
+    position: relative;
+    z-index: 1;
+}
