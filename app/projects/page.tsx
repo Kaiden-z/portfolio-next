@@ -100,6 +100,54 @@ const projects : Project[] = [
             }
         ]
     },
+        {
+        name: "Salt Fighter",
+        tags: ["Unreal Engine 5", "C++"],
+        description: (
+            <p>
+                How do you win a cook-off? With hand-to-hand combat, of course! <i>Salt Fighter</i> is a chef-themed 
+                2D fighting game featuring classic combos, motion inputs, and fast-paced combat. Battle your opponent 
+                to prove who has what it takes to earn the title of <b>Chef de Bataille</b>.
+            </p>
+        ),
+        media: [
+            {
+                type: "video",
+                src: "/videos/projects/saltFighter_Trailer.mp4",
+                poster: "/images/projects/saltFighter/saltFighterTitle.jpg"
+            },
+            {
+                type: "video",
+                src: "/videos/projects/saltFighter_Demo.mp4",
+            },
+            {
+                type: "image",
+                src: "/images/projects/saltFighter/saltFighterGif.gif"
+            },
+            {
+                type: "image",
+                src: "/images/projects/saltFighter/saltFighter1.png"
+            },
+            {
+                type: "image",
+                src: "/images/projects/saltFighter/saltFighter2.png"
+            },
+            {
+                type: "image",
+                src: "/images/projects/saltFighter/saltFighter3.png"
+            }
+        ],
+        links: [
+            {
+                site: "Itch.io",
+                url: "https://spoonfedbread.itch.io/salt-fighter"
+            },
+            {
+                site: "GitHub",
+                url: "https://github.com/Kaiden-z/SaltFighter"
+            }
+        ]
+    },
     {
         name: "Godot Procedural Animation Tool",
         tags: ["Godot", "C#", "Tooling"],
@@ -220,12 +268,12 @@ const projects : Project[] = [
         ],
         links: [
             {
-                site: "CurseForge",
-                url: "https://www.curseforge.com/minecraft/mc-mods/architect-villager-mod"
+                site: "Itch.io",
+                url: "https://spoonfedbread.itch.io/cuttingitreelclose"
             },
             {
                 site: "GitHub",
-                url: "https://github.com/Kaiden-z/ArchitectVillagerMod"
+                url: "https://github.com/deffeh/gummy-bear-pizza-2"
             }
         ]
     },
@@ -270,12 +318,12 @@ const projects : Project[] = [
         ],
         links: [
             {
-                site: "CurseForge",
-                url: "https://www.curseforge.com/minecraft/mc-mods/architect-villager-mod"
+                site: "Itch.io",
+                url: "https://spoonfedbread.itch.io/doog-take-2-to-tango"
             },
             {
                 site: "GitHub",
-                url: "https://github.com/Kaiden-z/ArchitectVillagerMod"
+                url: "https://github.com/deffeh/gummy-bear-pizza"
             }
         ]
     },
@@ -291,7 +339,7 @@ const projects : Project[] = [
                 </p>
 
                 <p>
-                    This project has only been scoped to support 1v1 2D fighting games. Support for tag fighters and common tag mechanics may be considered
+                    This project has only been planned to support 1v1 2D fighting games. Support for tag fighters and common tag mechanics may be considered
                     for future development.
                 </p>
             </div>
