@@ -6,7 +6,6 @@ import MediaSlider from "@/components/MediaSlider";
 import ArrowRightUpIcon from "@/icons/ArrowRightUpIcon";
 import { Media } from "@/types/media"
 import { motion } from "motion/react";
-import { line } from "motion/react-client";
 
 const featured_media : Media[] = [
     {

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: minmax(0, 650px) 400px;
     max-width: 1150px;
+    width: calc(100% - 4rem);
     gap: 5rem;
     align-items: start;
     margin: 3rem auto;

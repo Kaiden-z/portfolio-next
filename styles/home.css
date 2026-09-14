@@ -96,12 +96,12 @@
 
     .hero-intro {
         width: 100%;
-        margin-left: 0;
+        margin-left: 4rem;
     }
 
     .featured-project {
         width: 85%;
         margin-top: 8rem;
-        margin-right: 0;
+        margin: auto 4rem;
     }
 }
