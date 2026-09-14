@@ -83,7 +83,7 @@ export default function Home() {
 
                         <Button
                             icon={<ArrowRightUpIcon/>}
-                            href="https://pseudomancer.studio/archive.html"
+                            href="https://pseudomancer.studio/"
                         >
                             Check out our dev log
                         </Button>

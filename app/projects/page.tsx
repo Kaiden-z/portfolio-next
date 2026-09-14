@@ -53,7 +53,7 @@ const projects : Project[] = [
         links: [
             {
                 site: "Devlog",
-                url: "https://pseudomancer.studio/archive.html"
+                url: "https://pseudomancer.studio/"
             }
         ]
     },
