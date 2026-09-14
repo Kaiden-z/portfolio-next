@@ -58,7 +58,7 @@ export default function ProjectCard({
 
                 {links && links.length > 0 && (
                     <div className="project-links">
-                        <h2>{name === "Golfin' Slayer" ? "" : "Available on"}</h2>
+                        <h2 className="project-link-label">{name === "Golfin' Slayer" ? "" : "Available on"}</h2>
 
                         <div className="project-links-buttons">
                             {links.map((link) => (
