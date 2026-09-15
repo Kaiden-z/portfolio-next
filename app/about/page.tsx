@@ -5,8 +5,13 @@ import PageHeader from "@/components/PageHeader";
 import CompassIcon from "@/icons/CompassIcon";
 import { itemVariants, lineVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 
 export default function About() {
+    useEffect(() => {
+        document.title = "Kaiden Zapanta | About";
+    }, []);
+
     return (
         <motion.main 
             variants={mainVariants}

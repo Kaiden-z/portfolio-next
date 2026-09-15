@@ -8,6 +8,7 @@ import GitHubIcon from "@/icons/GitHubIcon";
 import ItchIcon from "@/icons/ItchIcon";
 import { Project } from "@/types/project";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 
 const projects : Project[] = [
     {
@@ -360,6 +361,10 @@ const projects : Project[] = [
 ]
 
 export default function Projects() {
+    useEffect(() => {
+        document.title = "Kaiden Zapanta | Projects";
+    }, []);
+
     return (
         <motion.main
             className="projects"

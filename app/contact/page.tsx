@@ -5,9 +5,13 @@ import LinkedInIcon from "@/icons/LinkedInIcon";
 import EmailIcon from "@/icons/EmailIcon";
 import { motion } from "motion/react";
 import { itemVariants, mainVariants, sectionVariants } from "@/animations/variants/variants";
-import { section } from "motion/react-client";
+import { useEffect } from "react";
 
 export default function Contact() {
+    useEffect(() => {
+        document.title = "Kaiden Zapanta | Contact";
+    }, []);
+
     return (
         <motion.main
             variants={mainVariants}

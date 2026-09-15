@@ -6,6 +6,7 @@ import MediaSlider from "@/components/MediaSlider";
 import ArrowRightUpIcon from "@/icons/ArrowRightUpIcon";
 import { Media } from "@/types/media"
 import { motion } from "motion/react";
+import { useEffect } from "react";
 
 const featured_media : Media[] = [
     {
@@ -31,6 +32,10 @@ const featured_media : Media[] = [
 ]
 
 export default function Home() {
+    useEffect(() => {
+        document.title = "Kaiden Zapanta | Home";
+    }, []);
+
     return (
         <motion.main 
             className="hero"
