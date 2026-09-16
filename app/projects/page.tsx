@@ -280,7 +280,7 @@ const projects : Project[] = [
     },
     {
         name: "DOOG - Take #2 To Tango",
-        tags: ["Java", "Modding"],
+        tags: ["Unity", "C#", "Game Jam"],
         description: (
             <div>
                 <p>
