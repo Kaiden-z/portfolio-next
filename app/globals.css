@@ -41,3 +41,12 @@ p {
     color: var(--secondary-foreground);
     border-radius: 2rem;
 }
+
+.cta-label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    opacity: 0.6;
+}

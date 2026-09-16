@@ -380,9 +380,10 @@ export default function Projects() {
                 className="account-links"
                 variants={sectionVariants}>
                 <motion.p
+                    className="cta-label"
                     variants={itemVariants}
                 >
-                    See more of my work:
+                    SEE MORE OF MY WORK:
                 </motion.p>
                 <motion.div
                     variants={itemVariants}
