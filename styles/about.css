@@ -30,11 +30,6 @@
     letter-spacing: 0.1em;
 }
 
-.about-section-heading h2 {
-    margin: 0;
-    font-size: 1.4rem;
-}
-
 .about-sidebar {
     position: sticky;
     top: 2rem;

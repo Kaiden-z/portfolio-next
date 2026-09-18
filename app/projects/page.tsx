@@ -27,6 +27,14 @@ const projects : Project[] = [
                     internal playtesting and showcase events. We're aiming to release a demo in late 2026 or early 2027, so stay tuned for more information.
                     In the meantime, follow our development journey through the dev log linked below for the latest updates, progress, and behind-the-scenes details.
                 </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Refactored core components using composition and other design patterns to improve scalability, maintainability, and code reuse.</li>
+                    <li>Created audio editor tools to allow audio designer to dynamically connect audio events to scripts and animation events.</li>
+                    <li>Implemented core player systems, including UI, a hierarchical combat state machine, and player weapons system.</li>
+                </ul>
             </div>
         ),
         media: [
@@ -62,10 +70,20 @@ const projects : Project[] = [
         name: "Vegetables of Mass Destruction",
         tags: ["Unreal Engine 5", "C++"],
         description: (
-            <p>
-                An action hack 'n' slash roguelite where you play as a feisty raccoon tasked with saving the farm animals from evil robots by his master, Sensei Cow. 
-                Use the destructive power of vegetables and team up with your trusty chicken and pig pals to rescue farm animals and destroy the robot invaders!
-            </p>
+            <div>
+                <p>
+                    An action hack 'n' slash roguelite where you play as a feisty raccoon tasked with saving the farm animals from evil robots by his master, Sensei Cow. 
+                    Use the destructive power of vegetables and team up with your trusty chicken and pig pals to rescue farm animals and destroy the robot invaders!
+                </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Designed and implemented responsive combat systems, including input buffering, attack combos, and roguelike mechanics.</li>
+                    <li>Leveraged Unreal Engine features such as Chaos Destruction to create dynamic and interactive world elements.</li>
+                    <li>Developed enemy wave and level management tools that give level designers greater flexibility when building and iterating on levels.</li>
+                </ul>
+            </div>
         ),
         media: [
             {
@@ -105,11 +123,22 @@ const projects : Project[] = [
         name: "Salt Fighter",
         tags: ["Unreal Engine 5", "C++"],
         description: (
-            <p>
-                How do you win a cook-off? With hand-to-hand combat, of course! <i>Salt Fighter</i> is a chef-themed 
-                2D fighting game featuring classic combos, motion inputs, and fast-paced combat. Battle your opponent 
-                to prove who has what it takes to earn the title of <b>Chef de Bataille</b>.
-            </p>
+            <div>
+                <p>
+                    How do you win a cook-off? With hand-to-hand combat, of course! <i>Salt Fighter</i> is a chef-themed 
+                    2D fighting game featuring classic combos, motion inputs, and fast-paced combat. Battle your opponent 
+                    to prove who has what it takes to earn the title of <b>Chef de Bataille</b>.
+                </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Developed a fighting game input system supporting attack cancels, motion inputs, and numpad notation mapping.</li>
+                    <li>Engineered a hitbox and hurtbox system for combat interactions and collision detection.</li>
+                    <li>Implemented core fighting game mechanics, including air dashes, fireballs, and dragon punches.</li>
+                </ul>
+
+            </div>
         ),
         media: [
             {
@@ -151,12 +180,22 @@ const projects : Project[] = [
     },
     {
         name: "Godot Procedural Animation Tool",
-        tags: ["Godot", "C#", "Tooling"],
+        tags: ["Godot", "C++", "Tooling"],
         description: (
-            <p>
-                A procedural animation editor tool for Godot 4.x. Quickly create and prototype procedurally animated entities using the various proceudral
-                animation types included such as FABRIK (Forward And Backward Reaching Inverse Kinematics), second order dynamics, and simple constraints.
-            </p>
+            <div>
+                <p>
+                    A procedural animation editor tool for Godot 4.x. Quickly create and prototype procedurally animated entities using the various proceudral
+                    animation types included such as FABRIK (Forward And Backward Reaching Inverse Kinematics), second order dynamics, and simple constraints.
+                </p>
+
+            <h2>Contributions</h2>
+
+            <ul>
+                <li>Built editor tooling that enables procedural animations to be authored, previewed, and refined directly within the editor.</li>
+                <li>Programmed constraint-based procedural animation techniques, including damped transforms and distance constraints.</li>
+            </ul>
+
+            </div>
         ),
         media: [
             {
@@ -188,12 +227,22 @@ const projects : Project[] = [
         name: "Architect Villager Mod",
         tags: ["Java", "Modding"],
         description: (
-            <p>
-                A Minecraft mod that introduces a new villager profession: <b>the Architect</b>. 
-                Trade raw materials with this skilled builder to obtain a variety of blueprints, 
-                each allowing you to construct pre-designed structures tailored to different villager professions. 
-                Whether you're jumpstarting a new village or expanding a settlement, the Architect has everything you need to get building.
-            </p>
+            <div>
+                <p>
+                    A Minecraft mod that introduces a new villager profession: <b>the Architect</b>. 
+                    Trade raw materials with this skilled builder to obtain a variety of blueprints, 
+                    each allowing you to construct pre-designed structures tailored to different villager professions. 
+                    Whether you're jumpstarting a new village or expanding a settlement, the Architect has everything you need to get building.
+                </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Utilized the Minecraft Forge modding framework to create custom items, villager types, and crafting recipes.</li>
+                    <li>Developed systems for validating structure placement locations and dynamically spawning structures.</li>
+                </ul>
+
+            </div>
         ),
         media: [
             {
@@ -242,6 +291,13 @@ const projects : Project[] = [
                 <p>
                     This game was submitted as part of the <b>EGaDS 2025 Texas Game Jam</b> and placed <u>3rd overall</u>.
                 </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Created interactive UI systems, including a scrollable in-game phone interface and upgrade screens.</li>
+                    <li>Developed core gameplay systems, including roguelike upgrades and randomized effects triggered through phone interactions.</li>
+                </ul>
             </div>
         ),
         media: [
@@ -292,6 +348,14 @@ const projects : Project[] = [
                 <p>
                     This game was submitted as part of the <b>EGaDS 2024 Texas Game Jam</b> and placed <u>1st overall</u>.
                 </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Programmed enemy AI for various enemies to define combat behavior and interactions with the player.</li>
+                    <li>Integrated UI systems and functionality with artist-created assets.</li>
+                    <li>Implemented level pickups, including healing items, with gameplay effects and player interactions.</li>
+                </ul>
             </div>
         ),
         media: [
@@ -343,6 +407,15 @@ const projects : Project[] = [
                     This project has only been planned to support 1v1 2D fighting games. Support for tag fighters and common tag mechanics may be considered
                     for future development.
                 </p>
+
+                <h2>Contributions</h2>
+
+                <ul>
+                    <li>Implemented precise frame-data and deterministic gameplay systems to ensure consistent, reproducible combat behavior.</li>
+                    <li>Applied object-oriented design patterns to create extensible and maintainable gameplay classes and systems.</li>
+                    <li>Engineered an extensible player framework for implementing complex, state-dependent fighting game mechanics and character behaviors.</li>
+                    <li>Built an input pipeline that translates inputs into fighting game motion inputs and in-game actions, with validation and restrictions based on the player's current state.</li>
+                </ul>
             </div>
         ),
         media: [

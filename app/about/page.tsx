@@ -50,7 +50,7 @@ export default function About() {
                         I especially value how games can provide a safe space for people to interact, 
                         connect, and socialize. This has been particularly meaningful to me, as games 
                         have given me opportunities to connect with others in ways that were not always 
-                        easy for me through traditional activities.
+                        easy for me through typical means.
                     </motion.p>
 
                     <motion.div 
