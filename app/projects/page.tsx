@@ -200,12 +200,12 @@ const projects : Project[] = [
         media: [
             {
                 type: "video",
-                src: "/videos/projects/AKIK_Trailer.mp4",
-                poster: "/images/projects/akik/AKIK_cover.png"
+                src: "/videos/projects/AKIK_Demo.mp4",
             },
             {
                 type: "video",
-                src: "/videos/projects/AKIK_Demo.mp4",
+                src: "/videos/projects/AKIK_Trailer.mp4",
+                poster: "/images/projects/akik/AKIK_cover.png"
             },
             {
                 type: "image",
