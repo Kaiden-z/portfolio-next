@@ -50,9 +50,7 @@ export default function Home() {
                 </div>
 
                 <h2>
-                    <motion.span variants={itemVariants}>Software Engineer</motion.span>
-                    <motion.span variants={itemVariants}> | </motion.span>
-                    <motion.span variants={itemVariants}>Gameplay Programmer</motion.span>
+                    <motion.span variants={itemVariants}>Software Engineer | Gameplay Programmer</motion.span>
                 </h2>
             </section>
 
