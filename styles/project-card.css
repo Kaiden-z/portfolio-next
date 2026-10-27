@@ -33,8 +33,14 @@
     padding-left: 1.5rem;
 }
 
-.project-card-content li::marker {
-    content: "-  ";
+.project-card-content li {
+    position: relative;
+}
+
+.project-card-content li::before {
+    content: "-";
+    position: absolute;
+    left: -1.25rem;
 }
 
 .project-card-media {
