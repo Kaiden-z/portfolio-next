@@ -57,8 +57,14 @@ export const menuVariants: Variants = {
         clipPath: "inset(0% 0% 0% 0% round 1.25rem)",
         opacity: 1,
         transition: {
-            duration: 0.25,
-            ease: easeOut,
+            clipPath: {
+                duration: 0.35,
+                ease: [0.16, 1, 0.3, 1],
+            },
+            opacity: {
+                duration: 0.3,
+                ease: easeOut,
+            },
             staggerChildren: 0.03,
         },
     },
@@ -73,7 +79,7 @@ export const menuItemVariants: Variants = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 0.25,
+            duration: 0.1,
             ease: easeOut,
         },
     },
