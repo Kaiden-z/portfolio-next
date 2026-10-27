@@ -3,8 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { menuItemVariants, menuVariants } from "@/animations/variants/variants";
 import MenuIcon from "@/icons/MenuIcon";
 import DownloadIcon from "@/icons/DownloadIcon";
+
+const MotionLink = motion.create(Link);
 
 const links = [
   { href: "/", label: "Home" },
@@ -44,44 +48,64 @@ export default function Navbar() {
     };
   }, [menuOpen]);
 
+  const linkClassName = (href: string) =>
+    `nav-link ${pathname === href ? "active" : ""}`;
+
   return (
     <nav ref={navRef} className="navbar" aria-label="Main navigation">
+      <div className="navbar-menu">
+        {links.map((link) => (
+          <Link key={link.href} href={link.href} className={linkClassName(link.href)}>
+            {link.label}
+          </Link>
+        ))}
+      </div>
+
       <button
         type="button"
         className="menu-toggle"
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
-        aria-controls="navbar-menu"
+        aria-controls="mobile-menu"
         onClick={() => setMenuOpen((open) => !open)}
       >
         <MenuIcon />
       </button>
 
-      <div id="navbar-menu" className={`navbar-menu ${menuOpen ? "open" : ""}`}>
-        {links.map((link) => {
-          const isActive = pathname === link.href;
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            id="mobile-menu"
+            className="mobile-menu"
+            variants={menuVariants}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+          >
+            {links.map((link) => (
+              <MotionLink
+                key={link.href}
+                href={link.href}
+                className={linkClassName(link.href)}
+                variants={menuItemVariants}
+              >
+                {link.label}
+              </MotionLink>
+            ))}
 
-          return (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`nav-link ${isActive ? "active" : ""}`}
+            <motion.a
+              href="/KaidenZapantaResume2026.pdf"
+              className="nav-link nav-resume"
+              target="_blank"
+              rel="noopener noreferrer"
+              variants={menuItemVariants}
             >
-              {link.label}
-            </Link>
-          );
-        })}
-
-        <a
-          href="/KaidenZapantaResume2026.pdf"
-          className="nav-link nav-resume"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon"><DownloadIcon /></span>
-          Resume / CV
-        </a>
-      </div>
+              <span className="icon"><DownloadIcon /></span>
+              Resume / CV
+            </motion.a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

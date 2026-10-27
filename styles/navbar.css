@@ -75,7 +75,7 @@
     border-color: var(--border-hover);
 }
 
-.nav-resume {
+.mobile-menu {
     display: none;
 }
 
@@ -139,12 +139,16 @@
     }
 
     .navbar-menu {
+        display: none;
+    }
+
+    .mobile-menu {
         position: absolute;
         top: calc(100% + 0.75rem);
         right: 0;
         z-index: 50;
 
-        display: none;
+        display: flex;
         flex-direction: column;
         gap: 1.25rem;
 
@@ -154,10 +158,6 @@
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 1.25rem;
-    }
-
-    .navbar-menu.open {
-        display: flex;
     }
 
     .nav-link {

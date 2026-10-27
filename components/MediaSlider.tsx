@@ -65,6 +65,7 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                                         }}
                                         options={{
                                             volume: 0.5,
+                                            fullscreen: { iosNative: true },
                                         }}
                                     />
                                 ) : (

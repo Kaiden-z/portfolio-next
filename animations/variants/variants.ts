@@ -44,3 +44,37 @@ export const lineVariants: Variants = {
         },
     },
 };
+export const menuVariants: Variants = {
+    hidden: {
+        clipPath: "inset(0% 0% 100% 100% round 1.25rem)",
+        opacity: 0,
+        transition: {
+            duration: 0.25,
+            ease: easeOut,
+        },
+    },
+    show: {
+        clipPath: "inset(0% 0% 0% 0% round 1.25rem)",
+        opacity: 1,
+        transition: {
+            duration: 0.25,
+            ease: easeOut,
+            staggerChildren: 0.03,
+        },
+    },
+};
+
+export const menuItemVariants: Variants = {
+    hidden: {
+        opacity: 0,
+        x: 10,
+    },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 0.25,
+            ease: easeOut,
+        },
+    },
+};
