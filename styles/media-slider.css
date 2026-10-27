@@ -77,3 +77,30 @@
     --plyr-range-track-height: 2px;
     --plyr-control-icon-size: 16px;
 }
+
+@media (max-width: 768px) {
+    .slider-arrow {
+        width: 1.75rem;
+    }
+
+    .slider-arrow svg {
+        flex-shrink: 0;
+        pointer-events: none;
+    }
+
+    .slider-arrow-left {
+        justify-content: flex-start;
+    }
+
+    .slider-arrow-left svg {
+        margin-left: -0.5em;
+    }
+
+    .slider-arrow-right {
+        justify-content: flex-end;
+    }
+
+    .slider-arrow-right svg {
+        margin-right: -0.5em;
+    }
+}

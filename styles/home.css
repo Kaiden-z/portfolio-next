@@ -91,17 +91,51 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding: 4rem 0 6rem;
+        min-height: auto;
+        padding: 3rem 0 4rem;
     }
 
     .hero-intro {
-        width: 100%;
-        margin-left: 4rem;
+        width: auto;
+        margin: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 16vw, 6rem);
+    }
+
+    .hero h2 {
+        font-size: clamp(1rem, 4.5vw, 1.25rem);
     }
 
     .featured-project {
-        width: 85%;
-        margin-top: 8rem;
-        margin: auto 4rem;
+        width: auto;
+        margin: 5rem 1rem 0;
+    }
+
+    .featured-project-header {
+        margin-bottom: 2rem;
+    }
+
+    .featured-project-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .featured-project-media {
+        order: -1;
+    }
+
+    .featured-project h3 {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+    }
+
+    .featured-project p {
+        max-width: none;
+        font-size: 1rem;
+    }
+
+    .featured-project-line {
+        margin: 3rem 0 1.5rem;
     }
 }

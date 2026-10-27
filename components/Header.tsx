@@ -13,6 +13,7 @@ export default function Header() {
             <Navbar />
 
             <Button
+                className="header-resume"
                 icon={<DownloadIcon />}
                 href="/KaidenZapantaResume2026.pdf"
             >

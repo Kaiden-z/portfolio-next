@@ -1,5 +1,5 @@
 .projects {
-    margin: 0 4rem;
+    margin: 0 clamp(1rem, 4vw, 4rem);
 }
 
 .project-links {
@@ -14,11 +14,12 @@
 }
 
 .projects-list {
-    margin: 2rem;
+    margin: 1rem auto;  
 }
 
 .account-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
