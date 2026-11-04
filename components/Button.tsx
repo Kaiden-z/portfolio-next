@@ -53,6 +53,7 @@ export default function Button({
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={handleMouseEnter}
+                whileTap={{ scale: 0.95 }}
             >
                 {content}
             </motion.a>
@@ -65,6 +66,7 @@ export default function Button({
             className={`button button-primary ${className}`}
             onClick={onClick}
             onMouseEnter={handleMouseEnter}
+            whileTap={{ scale: 0.95 }}
         >
             {content}
         </motion.button>

@@ -67,7 +67,7 @@ export default function ProjectCard({
                                     icon={getLinkIcon(link.site)}
                                     href={link.url}
                                 >
-                                    {name === "Golfin' Slayer" ? "Checkout our dev log" : link.site}
+                                    {name === "Golfin' Slayer" ? "Check out our dev log" : link.site}
                                 </Button>
                             ))}
                         </div>

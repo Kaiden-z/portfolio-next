@@ -1,6 +1,7 @@
 "use client"
 
 import PageHeader from "@/components/PageHeader";
+import ContactLink from "@/components/ContactLink";
 import LinkedInIcon from "@/icons/LinkedInIcon";
 import EmailIcon from "@/icons/EmailIcon";
 import { motion } from "motion/react";
@@ -35,11 +36,7 @@ export default function Contact() {
                     className="contact-info"
                     variants={sectionVariants}
                 >
-                    <motion.a
-                        className="contact-item border"
-                        href="mailto:kaiden.zapanta@gmail.com"
-                        variants={itemVariants}
-                    >
+                    <ContactLink href="mailto:kaiden.zapanta@gmail.com">
                         <span className="contact-icon">
                             <EmailIcon />
                         </span>
@@ -48,14 +45,11 @@ export default function Contact() {
                             <h2>EMAIL</h2>
                             <p>kaiden.zapanta@gmail.com</p>
                         </div>
-                    </motion.a>
+                    </ContactLink>
 
-                    <motion.a
-                        className="contact-item border"
+                    <ContactLink
                         href="https://linkedin.com/in/kaidenzapanta/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variants={itemVariants}
+                        external
                     >
                         <span className="contact-icon">
                             <LinkedInIcon />
@@ -65,10 +59,9 @@ export default function Contact() {
                             <h2>LINKEDIN</h2>
                             <p>linkedin.com/in/kaidenzapanta</p>
                         </div>
-                    </motion.a>
+                    </ContactLink>
                 </motion.div>
             </section>
         </motion.main>
     );
 }
-

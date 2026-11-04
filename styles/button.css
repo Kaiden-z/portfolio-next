@@ -28,7 +28,8 @@
     border-color: var(--border-hover);
 }
 
-.button-shine {
+.button-shine,
+.contact-shine {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,6 +48,10 @@
 
     transform: skewX(-20deg);
     z-index: 0;
+}
+
+.contact-shine {
+    width: 40%;
 }
 
 .button-content,
