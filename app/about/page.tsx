@@ -31,6 +31,19 @@ export default function About() {
                         variants={itemVariants}
                     >
                         <span>01</span>
+                        <h2>Who I am</h2>
+                    </motion.div>
+
+                    <motion.p className="about-intro" variants={itemVariants}>
+                        Hey! I'm Kaiden, a software engineer and aspiring game developer. 
+                        I build games in my free time, and I'm currently looking to land my first role in the industry.
+                    </motion.p>
+
+                    <motion.div
+                        className="about-section-heading"
+                        variants={itemVariants}
+                    >
+                        <span>02</span>
                         <h2>My connection to games</h2>
                     </motion.div>
 
@@ -53,29 +66,9 @@ export default function About() {
                         easy for me through typical means.
                     </motion.p>
 
-                    <motion.div 
-                        className="about-section-heading"
-                        variants={itemVariants}
-                    >
-                        <span>02</span>
-                        <h2>Why game development</h2>
-                    </motion.div>
-
                     <motion.p variants={itemVariants}>
-                        My interest in working in the game development industry grew out of my search for 
-                        a career that combined technical problem-solving with creativity. During college, 
-                        I discovered a genuine enjoyment of the technical challenges of software development, 
-                        but I often felt that traditional software roles lacked the creative aspect I was looking for. 
-                        At the same time, I found myself increasingly drawn to game development content, particularly 
-                        technical breakdowns and videos exploring how games implement their mechanics and systems. 
-                        I enjoyed learning about the technical decisions behind features I had experienced as 
-                        a player and understanding how those ideas were translated into working systems.
-                    </motion.p>
-
-                    <motion.p variants={itemVariants}>
-                        Game development stood out to me as a field where I could bring together my technical skills, 
-                        creativity, and lifelong passion for video games, while also exploring the technical side 
-                        of games that I had become increasingly fascinated by.
+                        Outside of games, I enjoy staying active with pickleball and volleyball, 
+                        experimenting with new recipes in the kitchen, and hunting for new restaurants to add to my Beli.
                     </motion.p>
 
                     <motion.div 
@@ -83,18 +76,23 @@ export default function About() {
                         variants={itemVariants}
                     >
                         <span>03</span>
-                        <h2>What I do</h2>
+                        <h2>Why game development</h2>
                     </motion.div>
 
                     <motion.p variants={itemVariants}>
-                        I am pursuing a career in game development, with a particular focus on gameplay programming, 
-                        and am eager to break into the industry through my first professional role.
+                        My interest in working in the game development industry grew out of my search for 
+                        a career that combined technical problem-solving with creativity. During college, 
+                        I discovered that I genuinely enjoyed the technical challenges of software development, 
+                        but I often felt that traditional software roles lacked the creative aspect I was looking for. 
+                        At the same time, I found myself increasingly drawn to game development content, particularly 
+                        technical breakdowns and videos exploring how various mechanics and systems are implemented in my favorite games. 
+                        I enjoyed learning about the technical decisions behind features I had experienced as 
+                        a player and understanding how those ideas were translated into gameplay.
                     </motion.p>
 
                     <motion.p variants={itemVariants}>
-                        To develop my skills, I have built personal projects and participated in game jams, 
-                        giving me hands-on experience that has strengthened my programming abilities and 
-                        challenged me to apply what I have learned in practical settings.
+                        Game development stood out to me as a field where I could bring together my technical skills, 
+                        creativity, and lifelong passion for video games.
                     </motion.p>
 
                     <motion.div 
@@ -102,14 +100,27 @@ export default function About() {
                         variants={itemVariants}
                     >
                         <span>04</span>
+                        <h2>What I do</h2>
+                    </motion.div>
+
+                    <motion.p variants={itemVariants}>
+                        To develop my skills, I spend much of my time creating games, participating in game jams,
+                        and experimenting with new tools and technologies. These experiences have been invaluable
+                        and have played a big role in shaping my programming skills. I hope to continue building on these skills 
+                        and someday apply what I've learned at a professional game studio, where I can help create engaging and memorable experiences for players.
+                    </motion.p>
+
+                    <motion.div 
+                        className="about-section-heading"
+                        variants={itemVariants}
+                    >
+                        <span>05</span>
                         <h2>Looking ahead</h2>
                     </motion.div>
 
                     <motion.p variants={itemVariants}>
                         I am always looking for new challenges and opportunities
-                        to learn and grow as a developer. I look forward to
-                        continuing to improve my skills, creating meaningful
-                        experiences through games, and seeing where my passion
+                        to learn and grow as a developer. I look forward to seeing where my passion
                         for game development takes me.
                     </motion.p>
                 </div>
