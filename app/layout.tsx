@@ -2,6 +2,12 @@ import "./globals.css";
 import "plyr-react/plyr.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+    themeColor: "#0b0b0b",
+    colorScheme: "dark",
+};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (

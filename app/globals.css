@@ -11,6 +11,11 @@
 @import "../styles/project-card.css";
 @import "../styles/contact.css";
 
+html {
+    background: var(--background);
+    color-scheme: dark;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
