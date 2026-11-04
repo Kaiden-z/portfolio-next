@@ -172,6 +172,7 @@ export default function About() {
                 <Button
                     icon={<CompassIcon />}
                     href="/projects"
+                    newTab={false}
                 >
                     Explore my past work
                 </Button>

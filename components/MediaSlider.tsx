@@ -34,13 +34,14 @@ export default function MediaSlider({ media }: { media: Media[] }) {
 
             <div className="media-main">
                 {media && (
-                    <button
+                    <motion.button
                         className="slider-arrow slider-arrow-left"
                         onClick={prevSlide}
                         aria-label="Previous media"
+                        whileTap={{ scale: 0.75 }}
                     >
                         <ChevronLeftIcon />
-                    </button>
+                    </motion.button>
                 )}
 
                 <div className="media-container">
@@ -82,26 +83,28 @@ export default function MediaSlider({ media }: { media: Media[] }) {
                 </div>
 
                 {media && (
-                    <button
+                    <motion.button
                         className="slider-arrow slider-arrow-right"
                         onClick={nextSlide}
                         aria-label="Next media"
+                        whileTap={{ scale: 0.75 }}
                     >
                         <ChevronRightIcon />
-                    </button>
+                    </motion.button>
                 )}
             </div>
 
             {media && (
                 <div className="slider-dots">
                 {media.map((_, index) => (
-                    <button
-                    key={index}
-                    className={`slider-dot ${
-                        index === currentIndex ? "active" : ""
-                    }`}
-                    onClick={() => setCurrentIndex(index)}
-                    aria-label={`Go to media ${index + 1}`}
+                    <motion.button
+                        key={index}
+                        className={`slider-dot ${
+                            index === currentIndex ? "active" : ""
+                        }`}
+                        onClick={() => setCurrentIndex(index)}
+                        aria-label={`Go to media ${index + 1}`}
+                        whileTap={{ scale: 0.75 }}
                     />
                 ))}
                 </div>

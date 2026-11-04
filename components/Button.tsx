@@ -8,6 +8,7 @@ type ButtonProps = {
     children: React.ReactNode;
     onClick?: () => void;
     href?: string;
+    newTab?: boolean;
 };
 
 export default function Button({
@@ -16,6 +17,7 @@ export default function Button({
     children,
     onClick,
     href,
+    newTab = true,
 }: ButtonProps) {
     const [scope, animate] = useAnimate();
 
@@ -50,7 +52,7 @@ export default function Button({
                 ref={scope}
                 href={href}
                 className={`button button-primary ${className}`}
-                target="_blank"
+                target={newTab ? "_blank" : "_self"}
                 rel="noopener noreferrer"
                 onMouseEnter={handleMouseEnter}
                 whileTap={{ scale: 0.95 }}
