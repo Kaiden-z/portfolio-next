@@ -61,16 +61,17 @@ export default function Navbar() {
         ))}
       </div>
 
-      <button
+      <motion.button
         type="button"
         className="menu-toggle"
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
         aria-controls="mobile-menu"
         onClick={() => setMenuOpen((open) => !open)}
+        whileTap={{ scale: 0.90 }}
       >
         <MenuIcon />
-      </button>
+      </motion.button>
 
       <AnimatePresence>
         {menuOpen && (
