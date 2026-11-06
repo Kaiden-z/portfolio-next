@@ -43,7 +43,7 @@ export default function Contact() {
 
                         <div>
                             <h2>EMAIL</h2>
-                            <p>kaiden.zapanta@gmail.com</p>
+                            <p>kaidenzapanta@gmail.com</p>
                         </div>
                     </ContactLink>
 
